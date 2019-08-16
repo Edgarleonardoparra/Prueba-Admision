@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+
+}
+
+<div class="jumbotron">
+    <h1>Index</h1>
+    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
+    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <button type="button" class="btn btn-info">@Html.ActionLink("Usuario", "Index", "Usuarios")</button>
+        <p>
+            En este enlace se realizara la creacion de los usuarios, con su respectiva contraseña, 
+            en el cual se podra modificar, visualizar o eliminar los respectivos usuarios.
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>@Html.ActionLink("Producto", "Index", "Productos")</h2>
+        <p>En este enlace se realizara la creacion de diferentes productos que se tendran en el almacen de viveres.</p>
+    </div>
+    <div class="col-md-4">
+        <h2>@Html.ActionLink("Venta", "Index", "Ventas")</h2>
+        <p>En este enlace se podra tener el dato del vendedor y el respectivo producto que fue vendido</p>
+    </div>
+</div>
